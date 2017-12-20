@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GetMessage</servlet-name>
+		<servlet-class>com.gmail.agentup.GetMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetMessage</servlet-name>
+		<url-pattern>/get</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddMessage</servlet-name>
+		<servlet-class>com.gmail.agentup.AddMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddMessage</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetRooms</servlet-name>
+		<servlet-class>com.gmail.agentup.GetRoomsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetRooms</servlet-name>
+		<url-pattern>/rooms</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddUser</servlet-name>
+		<servlet-class>com.gmail.agentup.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUser</servlet-name>
+		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
